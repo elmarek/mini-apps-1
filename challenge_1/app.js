@@ -5,6 +5,7 @@ var turns = 0
 
 // Check to see if move wins game
 let gameCheck = (() => {
+  // Array of winning states
   let boardState =
   [[board[0], board[3], board[6]],
   [board[1], board[4], board[7]],
@@ -14,8 +15,9 @@ let gameCheck = (() => {
   [board[0], board[3], board[6]],
   [board[0], board[4], board[8]],
   [board[2], board[4], board[6]]];
- console.log(boardState)
+
   var equality;
+  // Check to see if any winning states exist
   for (var i = 0; i < boardState.length; i++) {
     if (boardState[i][0] === boardState[i][1] && boardState[i][1] === boardState[i][2]) {
       equality = true
