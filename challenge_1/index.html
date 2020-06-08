@@ -2,24 +2,25 @@
 <html>
   <head>
     <title>Tic Tac Toe</title>
-
   </head>
-  <body >
-    <table border="0" style='text-align: center; color: white; font-size: 100px;' cellspacing="0" height='700' width='700'>
-      <tr>
-        <td class='btn' style='background-color: black'></td>
-        <td class='btn' style="background-color: red"></td>
-        <td class='btn' style='background-color: black'></td>
+  <body style='width: 100pc; height: 100pc; margin: 50px; background-color: forestgreen;'>
+    <header style='margin-bottom: 30px;'><button id='clear' style='background-color:red;
+      cursor:pointer;'>New Game</button></header>
+    <table cellspacing="0" style='text-align: center; color: white; font-size: 200px; table-layout: fixed; padding: 0'>
+      <tr style='height: 300px'>
+        <td id='0' style='background-color: black; width: 300px;'></td>
+        <td id='1' style="background-color: red; width: 300px;"></td>
+        <td id='2' style='background-color: black; width: 300px;'></td>
       </tr>
-      <tr>
-        <td style="background-color: red"></td>
-        <td style='background-color: black'></td>
-        <td style="background-color: red"></td>
+      <tr style='height: 300px'>
+        <td id='3' style="background-color: red"></td>
+        <td id='4' style='background-color: black'></td>
+        <td id='5' style="background-color: red"></td>
       </tr>
-      <tr>
-        <td style='background-color: black'></td>
-        <td style="background-color: red"></td>
-        <td style='background-color: black'></td>
+      <tr style='height: 300px'>
+        <td id='6' style='background-color: black; width: 300px;'></td>
+        <td id='7' style="background-color: red"></td>
+        <td id='8' style='background-color: black'></td>
       </tr>
     </table>
     <script src="app.js"></script>
